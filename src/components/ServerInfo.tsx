@@ -6,7 +6,7 @@ export default function ServerInfo() {
   return (
     <div className="relative z-10 flex w-full flex-col overflow-hidden py-20 bg-[#0a0e27]">
       
-      {/* --- Background Effects (Exact match to code(4).html) --- */}
+      {/* --- Background Effects --- */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-[10%] right-[-5%] w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px]"></div>
@@ -63,22 +63,24 @@ export default function ServerInfo() {
                   transition={{ delay: 0.2 }}
                   className="flex flex-col sm:flex-row gap-4 pt-2"
                 >
-                  <button className="group relative flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary text-white gap-3 text-base font-bold leading-normal tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,0.5)] font-rajdhani uppercase">
+                  {/* JOIN DISCORD LINK FIXED HERE */}
+                  <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group relative flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary text-white gap-3 text-base font-bold leading-normal tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,0.5)] font-rajdhani uppercase">
                     <MessageCircle className="w-5 h-5 group-hover:animate-bounce" />
                     <span className="truncate">Join Discord</span>
                     <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary to-red-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                  </button>
-                  <button className="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 border border-white/10 bg-white/5 text-white gap-2 text-base font-semibold font-rajdhani uppercase transition-all hover:bg-white/10 hover:border-white/20">
+                  </a>
+                  
+                  <a href="https://youtube.com/@as_op_plays?si=tQFaFCVCdqm0obSQ" target="_blank" className="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 border border-white/10 bg-white/5 text-white gap-2 text-base font-semibold font-rajdhani uppercase transition-all hover:bg-white/10 hover:border-white/20">
                     <span>Learn More</span>
                     <ArrowRight className="w-4 h-4" />
-                  </button>
+                  </a>
                 </motion.div>
               </div>
 
               {/* Right Column (Grid Cards) */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:w-7/12 w-full">
                 
-                {/* Card 1: Safe Trading (Col Span 2) */}
+                {/* Card 1: Safe Trading */}
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +111,7 @@ export default function ServerInfo() {
                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-secondary/20 text-secondary border border-secondary/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]">
                       <Gamepad2 className="w-6 h-6" />
                     </div>
-                    <Gamepad2 className="text-white/20 w-10 h-10" />
+                    <Gamepad2 className="text-white/20 w-10 h-10 absolute right-[-10px] top-[-10px] rotate-12" />
                   </div>
                   <h3 className="text-white text-lg font-bold font-orbitron z-10">Grand Mobile RP</h3>
                   <p className="text-gray-400 text-sm leading-relaxed z-10 font-inter">
@@ -129,7 +131,7 @@ export default function ServerInfo() {
                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-red-500/20 text-red-500 border border-red-500/30 shadow-[0_0_15px_rgba(239,68,68,0.2)]">
                       <Headphones className="w-6 h-6" />
                     </div>
-                    <Mic className="text-white/20 w-10 h-10" />
+                    <Mic className="text-white/20 w-10 h-10 absolute right-[-10px] top-[-10px] -rotate-12" />
                   </div>
                   <h3 className="text-white text-lg font-bold font-orbitron z-10">Chill & Music</h3>
                   <p className="text-gray-400 text-sm leading-relaxed z-10 font-inter">
@@ -137,7 +139,7 @@ export default function ServerInfo() {
                   </p>
                 </motion.div>
 
-                {/* Card 4: Tournaments (Col Span 2) */}
+                {/* Card 4: Tournaments */}
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
