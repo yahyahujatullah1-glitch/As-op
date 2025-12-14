@@ -1,61 +1,75 @@
 export const SITE_DATA = {
   hero: {
     title: "AS OP",
-    subtitle: "Gaming Community & Grand Mobile RP Marketplace",
-    ctaPrimary: "Join Discord Server",
-    ctaSecondary: "Watch on YouTube",
+    subtitle: "Elite Gaming Community & Grand Mobile RP Marketplace",
+    ctaPrimary: "Join Discord",
+    ctaSecondary: "Watch Gameplay",
   },
   about: {
-    title: "Who is AS OP?",
-    description: "I am a content creator and gamer passionate about building a safe, fun, and active community. Specialized in Grand Mobile RP, I strive to bring the best marketplace deals and engaging content to my audience.",
-    imageAlt: "AS OP Avatar",
+    title: "The Legend",
+    description: "AS OP isn't just a gamer; he's a content powerhouse. Domination in Grand Mobile RP is the standard here. We built this community for serious players who want safe trades, high-tier content, and a family that watches each other's backs.",
+    imageAlt: "AS OP Profile",
   },
   serverInfo: {
-    title: "What is this server about?",
-    description: "A chill gaming haven where community comes first. Whether you're here to trade in Grand Mobile RP safely or just hang out, you've found your home.",
+    title: "Why Join Us?",
+    description: "Stop trading in the shadows. Our Discord is the #1 verified hub for Grand Mobile RP. We prioritize safety, speed, and community vibes above all else.",
     features: [
-      "Safe Trading Environment",
-      "Active Grand Mobile RP Community",
-      "Regular Gaming Events",
-      "Friendly Staff & Moderation"
+      "Verified Middleman Service",
+      "Active Market (Buy/Sell/Trade)",
+      "Daily Gaming Events",
+      "24/7 Active Voice Channels"
     ]
   },
   offerings: {
-    title: "What We Offer",
+    title: "Community Perks",
     items: [
       {
-        title: "Grand Mobile RP Market",
-        desc: "The safest place to trade items and currency.",
+        title: "The Marketplace",
+        desc: "Secure channels for Grand Mobile RP trading. No scams, just business.",
         status: "Active"
       },
       {
-        title: "Giveaways",
-        desc: "Exclusive rewards for boosters and active members.",
+        title: "Booster Perks",
+        desc: "Exclusive roles, private channels, and higher giveaway odds.",
         status: "Active"
       },
       {
-        title: "Community Chats",
-        desc: "Voice channels, memes, and general chill zones.",
+        title: "Content Alerts",
+        desc: "Get notified the second a new video or stream drops.",
         status: "Active"
       },
       {
-        title: "Custom Bots",
-        desc: "Mini-games and economy bots coming soon.",
+        title: "Clan Wars",
+        desc: "Competitive team events with prize pools.",
         status: "Coming Soon"
       }
     ]
   },
   links: {
-    title: "Important Links",
+    title: "Connect With AS OP",
     items: [
-      { name: "Discord Server", url: "https://discord.gg/yourinvite", icon: "discord" },
-      { name: "YouTube Channel", url: "https://youtube.com/@yourchannel", icon: "youtube" },
-      { name: "Marketplace", url: "#", icon: "shopping" }, // Replace with specific channel link if applicable
-      { name: "Server Rules", url: "#", icon: "book" },
+      { 
+        name: "Discord Server", 
+        url: "https://discord.gg/bbJ6pnEFA2", 
+        icon: "discord",
+        color: "hover:shadow-[#5865F2]/50 hover:border-[#5865F2] text-[#5865F2]" 
+      },
+      { 
+        name: "YouTube Channel", 
+        url: "https://youtube.com/@as_op_plays?si=tQFaFCVCdqm0obSQ", 
+        icon: "youtube",
+        color: "hover:shadow-[#FF0000]/50 hover:border-[#FF0000] text-[#FF0000]"
+      },
+      { 
+        name: "Instagram", 
+        url: "https://www.instagram.com/asop.official/", 
+        icon: "instagram",
+        color: "hover:shadow-[#E1306C]/50 hover:border-[#E1306C] text-[#E1306C]"
+      },
     ]
   },
   footer: {
-    copyright: "© 2024 AS OP Community. All rights reserved.",
-    tagline: "Built for AS OP Community"
+    copyright: "© 2025 AS OP. All rights reserved.",
+    tagline: "Dominate the Game."
   }
 };
