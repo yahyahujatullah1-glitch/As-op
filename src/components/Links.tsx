@@ -1,59 +1,32 @@
 "use client";
 import { motion } from "framer-motion";
 import { SITE_DATA } from "@/lib/data";
-import { Disc, Youtube, Instagram, ArrowUpRight } from "lucide-react";
+import { Disc, Youtube, ShoppingBag, BookOpen, ArrowUpRight } from "lucide-react";
 
-// Professional Brand Configurations
 const brandConfig: any = {
-  discord: {
-    icon: Disc,
-    color: "#5865F2",
-    label: "Join The Server",
-    sub: "Official Community Hub",
-    bg: "hover:bg-[#5865F2]/10",
-    border: "hover:border-[#5865F2]",
-    shadow: "hover:shadow-[0_0_30px_rgba(88,101,242,0.3)]"
-  },
-  youtube: {
-    icon: Youtube,
-    color: "#FF0000",
-    label: "Subscribe Now",
-    sub: "High-Tier Gameplay",
-    bg: "hover:bg-[#FF0000]/10",
-    border: "hover:border-[#FF0000]",
-    shadow: "hover:shadow-[0_0_30px_rgba(255,0,0,0.3)]"
-  },
-  instagram: {
-    icon: Instagram,
-    color: "#E1306C",
-    label: "Follow Updates",
-    sub: "Behind The Scenes",
-    bg: "hover:bg-[#E1306C]/10",
-    border: "hover:border-[#E1306C]",
-    shadow: "hover:shadow-[0_0_30px_rgba(225,48,108,0.3)]"
-  }
+  discord: { icon: Disc, color: "text-[#5865F2]", border: "border-l-[#5865F2]", bg: "bg-[#5865F2]/10" },
+  youtube: { icon: Youtube, color: "text-[#FF0000]", border: "border-l-[#FF0000]", bg: "bg-[#FF0000]/10" },
+  instagram: { icon: ShoppingBag, color: "text-[#06b6d4]", border: "border-l-[#06b6d4]", bg: "bg-[#06b6d4]/10" }, // Using cyan for marketplace look
+  default: { icon: BookOpen, color: "text-yellow-500", border: "border-l-yellow-500", bg: "bg-yellow-500/10" }
 };
 
 export default function Links() {
   return (
     <section className="py-24 relative">
       <div className="container mx-auto px-4 max-w-6xl">
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-        >
-            <h2 className="font-orbitron text-4xl md:text-5xl font-bold mb-4 text-white">
-            {SITE_DATA.links.title}
+        <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/5 border border-white/10 text-xs font-rajdhani tracking-wider text-gray-400 uppercase mb-4">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                Operations Center
+            </div>
+            <h2 className="font-orbitron text-4xl md:text-6xl font-black uppercase text-white mb-4">
+                Important <span className="text-primary">Links</span>
             </h2>
-            <div className="h-1 w-24 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full" />
-        </motion.div>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {SITE_DATA.links.items.map((link, idx) => {
-            // Get the styling config for this specific social network
-            const config = brandConfig[link.icon.toLowerCase()] || brandConfig.discord;
+            const config = brandConfig[link.icon.toLowerCase()] || brandConfig.default;
             const Icon = config.icon;
 
             return (
@@ -61,44 +34,25 @@ export default function Links() {
                 key={idx}
                 href={link.url}
                 target="_blank"
-                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                whileHover={{ y: -8, scale: 1.02 }}
+                whileHover={{ y: -5 }}
                 className={`
-                  relative overflow-hidden rounded-2xl p-8
-                  bg-[#0f1225] border border-white/5 
-                  transition-all duration-300 group
-                  flex flex-col items-center text-center
-                  ${config.border} ${config.shadow}
+                  bg-surface border border-white/5 ${config.border} border-l-4 
+                  rounded-xl p-8 flex flex-col justify-between group hover:bg-[#15192b] transition-all
                 `}
               >
-                {/* Background Hover Glow */}
-                <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-transparent via-transparent to-${config.color}/5`} />
-                
-                {/* Icon Container */}
-                <div 
-                  className="mb-6 p-4 rounded-2xl bg-white/5 border border-white/5 relative z-10 group-hover:bg-white/10 transition-colors"
-                  style={{ color: config.color }} // Inline style for dynamic brand color
-                >
-                  <Icon className="w-12 h-12" strokeWidth={1.5} />
+                <div className="flex justify-between items-start mb-8">
+                  <div className={`w-14 h-14 rounded flex items-center justify-center ${config.bg} ${config.color} border border-white/5`}>
+                    <Icon className="w-8 h-8" />
+                  </div>
+                  <ArrowUpRight className="text-gray-600 group-hover:text-white transition-colors" />
                 </div>
-
-                {/* Text Content */}
-                <div className="relative z-10">
-                  <h3 className="font-orbitron font-bold text-2xl text-white mb-1">
-                    {config.label}
-                  </h3>
-                  <p className="text-gray-500 text-sm tracking-widest uppercase font-medium group-hover:text-gray-300 transition-colors">
-                    {config.sub}
-                  </p>
-                </div>
-
-                {/* External Link Arrow (Appears on Hover) */}
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
-                  <ArrowUpRight className="w-5 h-5 text-gray-400" />
+                <div>
+                  <h3 className="font-orbitron text-2xl font-bold text-white mb-2">{link.name}</h3>
+                  <p className="text-gray-400 text-sm">Click to access the official {link.name}.</p>
                 </div>
               </motion.a>
             );
