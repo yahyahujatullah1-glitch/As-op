@@ -9,7 +9,6 @@ export default function Offerings() {
       
       <div className="mx-auto flex max-w-[1200px] flex-col items-center text-center relative z-10">
         
-        {/* Pill Label */}
         <div className="mb-6 inline-flex items-center rounded border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-bold font-rajdhani text-primary uppercase tracking-widest">
             <span className="mr-2 flex h-2 w-2 relative">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
@@ -26,14 +25,13 @@ export default function Offerings() {
             Join the fastest growing community for Grand Mobile RP and beyond. Explore our exclusive features designed for elite gamers.
         </p>
 
-        {/* Grid */}
+        {/* Grid - NOW CLICKABLE */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 w-full text-left">
             
-            {/* Card 1 */}
-            <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_30px_-5px_rgba(220,38,38,0.3)]">
+            {/* Card 1: Grand Mobile RP - Link to Discord */}
+            <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_30px_-5px_rgba(220,38,38,0.3)] cursor-pointer">
                 <div className="relative h-48 w-full overflow-hidden bg-gray-900">
                     <div className="absolute inset-0 bg-gradient-to-t from-[#13162e] to-transparent z-10"></div>
-                    {/* Placeholder image matching style */}
                     <div className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:scale-110 transition-transform duration-700" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=2070&auto=format&fit=crop")' }}></div>
                     <div className="absolute right-3 top-3 z-20 rounded bg-green-500/20 px-2 py-1 text-[10px] font-bold text-green-400 backdrop-blur-md border border-green-500/30 font-rajdhani">ACTIVE</div>
                 </div>
@@ -43,15 +41,16 @@ export default function Offerings() {
                     </div>
                     <h3 className="font-orbitron mb-2 text-xl font-bold text-white group-hover:text-primary transition-colors">Grand Mobile RP</h3>
                     <p className="mb-6 flex-1 text-sm leading-relaxed text-gray-400 font-inter">Secure trading for Grand Mobile RP assets. Buy, sell, and trade safely.</p>
-                    <button className="mt-auto w-full rounded-lg bg-primary py-2.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary/90">Visit Marketplace</button>
+                    <div className="mt-auto w-full rounded-lg bg-primary py-2.5 text-center text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all group-hover:bg-red-700">Visit Marketplace</div>
                 </div>
-            </div>
+            </a>
 
-            {/* Card 2 */}
-            <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-red-400/50 hover:shadow-[0_0_30px_-5px_rgba(239,68,68,0.3)]">
+            {/* Card 2: Giveaways - Link to Discord - ADDED IMAGE */}
+            <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-red-400/50 hover:shadow-[0_0_30px_-5px_rgba(239,68,68,0.3)] cursor-pointer">
                 <div className="relative h-48 w-full overflow-hidden bg-gray-900">
                     <div className="absolute inset-0 bg-gradient-to-t from-[#13162e] to-transparent z-10"></div>
-                    <div className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:scale-110 transition-transform duration-700" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1605901309584-818e25960b8f?q=80&w=2000&auto=format&fit=crop")' }}></div>
+                    {/* GIVEAWAY IMAGE ADDED BELOW */}
+                    <div className="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-110 transition-transform duration-700" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1513884923967-4b182ef1671f?q=80&w=2074&auto=format&fit=crop")' }}></div>
                     <div className="absolute right-3 top-3 z-20 rounded bg-red-500/20 px-2 py-1 text-[10px] font-bold text-red-500 backdrop-blur-md border border-red-500/30 font-rajdhani">WEEKLY</div>
                 </div>
                 <div className="flex flex-1 flex-col p-5">
@@ -60,12 +59,12 @@ export default function Offerings() {
                     </div>
                     <h3 className="font-orbitron mb-2 text-xl font-bold text-white group-hover:text-red-500 transition-colors">Epic Giveaways</h3>
                     <p className="mb-6 flex-1 text-sm leading-relaxed text-gray-400 font-inter">Exclusive rewards for active members including Nitro & currency boosters.</p>
-                    <button className="mt-auto w-full rounded-lg border border-red-500/30 bg-red-500/10 py-2.5 text-sm font-bold text-red-500 transition-all hover:bg-red-500 hover:text-white">View Rewards</button>
+                    <div className="mt-auto w-full rounded-lg border border-red-500/30 bg-red-500/10 py-2.5 text-center text-sm font-bold text-red-500 transition-all group-hover:bg-red-500 group-hover:text-white">View Rewards</div>
                 </div>
-            </div>
+            </a>
 
-            {/* Card 3 */}
-            <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-secondary/50 hover:shadow-[0_0_30px_-5px_rgba(6,182,212,0.3)]">
+            {/* Card 3: Community Lounge - Link to Discord */}
+            <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-secondary/50 hover:shadow-[0_0_30px_-5px_rgba(6,182,212,0.3)] cursor-pointer">
                 <div className="relative h-48 w-full overflow-hidden bg-gray-900">
                     <div className="absolute inset-0 bg-gradient-to-t from-[#13162e] to-transparent z-10"></div>
                     <div className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:scale-110 transition-transform duration-700" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop")' }}></div>
@@ -77,11 +76,11 @@ export default function Offerings() {
                     </div>
                     <h3 className="font-orbitron mb-2 text-xl font-bold text-white group-hover:text-secondary transition-colors">Community Lounge</h3>
                     <p className="mb-6 flex-1 text-sm leading-relaxed text-gray-400 font-inter">Voice channels, music bots, and chill vibes available 24/7.</p>
-                    <button className="mt-auto w-full rounded-lg border border-secondary/30 bg-secondary/10 py-2.5 text-sm font-bold text-secondary transition-all hover:bg-secondary hover:text-white">Join Chat</button>
+                    <div className="mt-auto w-full rounded-lg border border-secondary/30 bg-secondary/10 py-2.5 text-center text-sm font-bold text-secondary transition-all group-hover:bg-secondary group-hover:text-white">Join Chat</div>
                 </div>
-            </div>
+            </a>
 
-            {/* Card 4 (Disabled) */}
+            {/* Card 4: Arcade (Coming Soon - Not Clickable) */}
             <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#0f1120] opacity-80 transition-all hover:opacity-100">
                 <div className="relative h-48 w-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0f1120] to-transparent z-10"></div>
@@ -94,7 +93,7 @@ export default function Offerings() {
                     </div>
                     <h3 className="font-orbitron mb-2 text-xl font-bold text-gray-300">Arcade & Economy</h3>
                     <p className="mb-6 flex-1 text-sm leading-relaxed text-gray-500 font-inter">Custom bots and mini-games to earn server currency.</p>
-                    <button className="mt-auto w-full rounded-lg border border-white/10 bg-white/5 py-2.5 text-sm font-bold text-gray-500 cursor-not-allowed">Notify Me</button>
+                    <div className="mt-auto w-full rounded-lg border border-white/10 bg-white/5 py-2.5 text-center text-sm font-bold text-gray-500 cursor-not-allowed">Notify Me</div>
                 </div>
             </div>
 
