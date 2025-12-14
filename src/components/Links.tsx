@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowUpRight, MessageCircle, Youtube, ShoppingBag, Gavel } from "lucide-react";
+import { ArrowUpRight, MessageCircle, Youtube, ShoppingBag, Instagram } from "lucide-react";
 
 export default function Links() {
   return (
@@ -60,7 +60,7 @@ export default function Links() {
                 </div>
             </motion.a>
 
-            {/* Card 3: Marketplace (Linked to Discord) */}
+            {/* Card 3: Marketplace (Link to Discord) */}
             <motion.a href="https://discord.gg/bbJ6pnEFA2" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-secondary bg-[#13162e] hover:border-secondary hover:shadow-[0_0_20px_rgba(6,182,212,0.15)] transition-all">
                 <div className="flex justify-between items-start">
                     <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
@@ -74,17 +74,17 @@ export default function Links() {
                 </div>
             </motion.a>
 
-             {/* Card 4: Rules (Linked to Discord) */}
-             <motion.a href="https://discord.gg/bbJ6pnEFA2" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-red-400 bg-[#13162e] hover:border-red-400 hover:shadow-[0_0_20px_rgba(248,113,113,0.15)] transition-all">
+             {/* Card 4: Instagram (Replaced Rules) */}
+             <motion.a href="https://www.instagram.com/asop.official/" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-[#E1306C] bg-[#13162e] hover:border-[#E1306C] hover:shadow-[0_0_20px_rgba(225,48,108,0.15)] transition-all">
                 <div className="flex justify-between items-start">
-                    <div className="w-12 h-12 rounded-lg bg-red-400/10 flex items-center justify-center text-red-400 group-hover:bg-red-400 group-hover:text-white transition-colors">
-                        <Gavel className="w-6 h-6" />
+                    <div className="w-12 h-12 rounded-lg bg-[#E1306C]/10 flex items-center justify-center text-[#E1306C] group-hover:bg-[#E1306C] group-hover:text-white transition-colors">
+                        <Instagram className="w-6 h-6" />
                     </div>
                     <ArrowUpRight className="text-gray-600 group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                    <h3 className="text-xl font-orbitron font-bold text-white mb-1">Server Rules</h3>
-                    <p className="text-gray-400 text-sm">Code of conduct, guidelines, and bannable offenses.</p>
+                    <h3 className="text-xl font-orbitron font-bold text-white mb-1">Instagram</h3>
+                    <p className="text-gray-400 text-sm">Follow for updates, announcements, and behind the scenes.</p>
                 </div>
             </motion.a>
 
