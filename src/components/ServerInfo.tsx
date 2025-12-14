@@ -4,9 +4,9 @@ import { Shield, Gamepad2, Headphones, Trophy, ArrowRight, MessageCircle, Mic } 
 
 export default function ServerInfo() {
   return (
-    <div className="relative z-10 flex w-full flex-col overflow-hidden py-20">
+    <div className="relative z-10 flex w-full flex-col overflow-hidden py-20 bg-[#0a0e27]">
       
-      {/* --- Background Effects (From your Reference Code) --- */}
+      {/* --- Background Effects (Exact match to code(4).html) --- */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-[10%] right-[-5%] w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px]"></div>
@@ -14,7 +14,7 @@ export default function ServerInfo() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_80%)]"></div>
       </div>
 
-      <div className="layout-container flex h-full grow flex-col relative z-10">
+      <div className="flex h-full grow flex-col relative z-10">
         <div className="flex flex-1 justify-center px-4 md:px-10 lg:px-20">
           <div className="flex flex-col max-w-[1200px] flex-1">
             
@@ -34,7 +34,7 @@ export default function ServerInfo() {
               </h1>
             </motion.div>
 
-            {/* Content Split */}
+            {/* Split Layout */}
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 py-6 items-start">
               
               {/* Left Column (Sticky Text) */}
@@ -78,7 +78,7 @@ export default function ServerInfo() {
               {/* Right Column (Grid Cards) */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:w-7/12 w-full">
                 
-                {/* Card 1: Safe Trading */}
+                {/* Card 1: Safe Trading (Col Span 2) */}
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +109,7 @@ export default function ServerInfo() {
                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-secondary/20 text-secondary border border-secondary/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]">
                       <Gamepad2 className="w-6 h-6" />
                     </div>
-                    <Gamepad2 className="text-white/5 w-16 h-16 absolute right-[-10px] top-[-10px] rotate-12" />
+                    <Gamepad2 className="text-white/20 w-10 h-10" />
                   </div>
                   <h3 className="text-white text-lg font-bold font-orbitron z-10">Grand Mobile RP</h3>
                   <p className="text-gray-400 text-sm leading-relaxed z-10 font-inter">
@@ -129,7 +129,7 @@ export default function ServerInfo() {
                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-red-500/20 text-red-500 border border-red-500/30 shadow-[0_0_15px_rgba(239,68,68,0.2)]">
                       <Headphones className="w-6 h-6" />
                     </div>
-                    <Mic className="text-white/5 w-16 h-16 absolute right-[-10px] top-[-10px] -rotate-12" />
+                    <Mic className="text-white/20 w-10 h-10" />
                   </div>
                   <h3 className="text-white text-lg font-bold font-orbitron z-10">Chill & Music</h3>
                   <p className="text-gray-400 text-sm leading-relaxed z-10 font-inter">
@@ -137,7 +137,7 @@ export default function ServerInfo() {
                   </p>
                 </motion.div>
 
-                {/* Card 4: Tournaments */}
+                {/* Card 4: Tournaments (Col Span 2) */}
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
