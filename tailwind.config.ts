@@ -9,18 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0e27",
-        primary: "#8b5cf6", // Violet
-        secondary: "#06b6d4", // Cyan
-        neon: "#ec4899", // Pink
+        background: "#050714", // Deep Navy/Black
+        surface: "#0f1221",    // Card Background
+        primary: "#dc2626",    // Vibrant Red
+        secondary: "#06b6d4",  // Cyan
       },
       fontFamily: {
         orbitron: ["var(--font-orbitron)"],
         inter: ["var(--font-inter)"],
+        rajdhani: ["var(--font-rajdhani)"], // New Tech Font
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'glass': 'linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)',
+        'grid-pattern': "linear-gradient(to right, #ffffff05 1px, transparent 1px), linear-gradient(to bottom, #ffffff05 1px, transparent 1px)",
       },
     },
   },
