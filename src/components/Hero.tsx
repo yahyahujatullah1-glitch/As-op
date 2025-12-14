@@ -5,28 +5,28 @@ import { Gamepad2, Youtube } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       
-      {/* Dynamic Background */}
+      {/* Backgrounds */}
       <div className="absolute inset-0 bg-grid -z-20" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] -z-10 animate-float" />
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px] -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] -z-10" />
 
       <div className="container mx-auto px-4 text-center z-10">
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="inline-block mb-4 px-4 py-1 rounded-full border border-neon/50 bg-neon/10 text-neon text-sm font-bold tracking-wider uppercase"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-8"
         >
-          Official Community Portal
+          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+          <span className="text-xs font-rajdhani font-bold tracking-widest text-gray-300 uppercase">Grand Mobile RP Live</span>
         </motion.div>
 
         <motion.h1 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-orbitron text-7xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 glow-text mb-6 tracking-tighter"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="font-orbitron text-7xl md:text-9xl font-black text-white mb-4 tracking-tighter drop-shadow-[0_0_30px_rgba(220,38,38,0.3)]"
         >
           {SITE_DATA.hero.title}
         </motion.h1>
@@ -34,10 +34,10 @@ export default function Hero() {
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed"
+          transition={{ delay: 0.3 }}
+          className="font-rajdhani text-xl md:text-2xl text-secondary mb-8 uppercase tracking-[0.2em]"
         >
-          {SITE_DATA.hero.subtitle}
+          Gaming Community & <span className="text-white">Grand Mobile RP Marketplace</span>
         </motion.p>
 
         <motion.div 
@@ -49,20 +49,40 @@ export default function Hero() {
           <a 
             href={SITE_DATA.links.items[0].url} 
             target="_blank"
-            className="group relative flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl font-bold transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(139,92,246,0.5)]"
+            className="flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-red-800 text-white px-10 py-4 rounded font-rajdhani font-bold text-lg tracking-wide hover:scale-105 transition-transform shadow-[0_0_20px_rgba(220,38,38,0.4)]"
           >
-            <Gamepad2 className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+            <Gamepad2 className="w-5 h-5" />
             {SITE_DATA.hero.ctaPrimary}
           </a>
           
           <a 
             href={SITE_DATA.links.items[1].url}
             target="_blank" 
-            className="group flex items-center justify-center gap-3 bg-transparent border border-white/20 hover:border-red-500 text-white hover:bg-red-500/10 px-10 py-4 rounded-xl font-bold transition-all hover:scale-105"
+            className="flex items-center justify-center gap-3 bg-transparent border border-white/20 hover:bg-white/5 text-white px-10 py-4 rounded font-rajdhani font-bold text-lg tracking-wide transition-all"
           >
-            <Youtube className="w-5 h-5 text-red-500 group-hover:text-red-400" />
+            <Youtube className="w-5 h-5 text-primary" />
             {SITE_DATA.hero.ctaSecondary}
           </a>
+        </motion.div>
+
+        {/* Stats */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 }}
+          className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto border-t border-white/5 pt-12"
+        >
+            {[
+                { label: "Members", val: "50K+" },
+                { label: "Trades", val: "2.4M" },
+                { label: "Support", val: "24/7" },
+                { label: "Ranked", val: "Top 1" }
+            ].map((stat, i) => (
+                <div key={i}>
+                    <div className="font-orbitron text-3xl font-bold text-white">{stat.val}</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-widest font-rajdhani font-bold">{stat.label}</div>
+                </div>
+            ))}
         </motion.div>
       </div>
     </section>
