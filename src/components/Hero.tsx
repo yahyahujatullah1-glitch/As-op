@@ -55,21 +55,21 @@ export default function Hero() {
           transition={{ delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center gap-5 w-full justify-center"
         >
-          <button className="group relative flex items-center justify-center gap-3 w-full sm:w-auto h-14 px-8 rounded bg-primary text-white font-rajdhani font-bold text-lg tracking-wide overflow-hidden transition-all hover:scale-105 hover:bg-primary/90 shadow-[0_0_15px_rgba(220,38,38,0.4)]">
+          <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group relative flex items-center justify-center gap-3 w-full sm:w-auto h-14 px-8 rounded bg-primary text-white font-rajdhani font-bold text-lg tracking-wide overflow-hidden transition-all hover:scale-105 hover:bg-primary/90 shadow-[0_0_15px_rgba(220,38,38,0.4)]">
             <MessageCircle className="w-5 h-5 fill-current" />
             <span>Join Discord Server</span>
-          </button>
-          <button className="group flex items-center justify-center gap-3 w-full sm:w-auto h-14 px-8 rounded bg-transparent border border-white/20 text-white font-rajdhani font-bold text-lg tracking-wide transition-all hover:bg-white/5 hover:border-secondary hover:text-secondary hover:shadow-[0_0_15px_rgba(6,182,212,0.3)]">
+          </a>
+          <a href="https://youtube.com/@as_op_plays?si=tQFaFCVCdqm0obSQ" target="_blank" className="group flex items-center justify-center gap-3 w-full sm:w-auto h-14 px-8 rounded bg-transparent border border-white/20 text-white font-rajdhani font-bold text-lg tracking-wide transition-all hover:bg-white/5 hover:border-secondary hover:text-secondary hover:shadow-[0_0_15px_rgba(6,182,212,0.3)]">
             <PlayCircle className="w-5 h-5 text-red-500 group-hover:text-secondary transition-colors" />
             <span>Watch on YouTube</span>
-          </button>
+          </a>
         </motion.div>
 
-        {/* Stats Grid */}
+        {/* Stats Grid - UPDATED NUMBERS */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 border-t border-white/5 pt-10 w-full max-w-4xl">
            {[
-               { val: "50K+", label: "Members" },
-               { val: "2.4M", label: "Trades" },
+               { val: "800+", label: "Members" },
+               { val: "Daily", label: "Trades" },
                { val: "24/7", label: "Support" },
                { val: "Top 1", label: "Ranked" }
            ].map((item, i) => (
