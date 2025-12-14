@@ -14,11 +14,14 @@ export default function Links() {
           <h1 className="text-4xl sm:text-6xl font-orbitron font-black text-white tracking-wide uppercase leading-tight drop-shadow-lg">
              Important <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary animate-pulse">Links</span>
           </h1>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light mt-4">
+             Access the core of the AS OP network. Connect with elite players, watch exclusive content, trade items, and rank up.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             
-            {/* Discord */}
+            {/* Card 1: Discord (Span 2 rows on large) */}
             <motion.a 
                 href="https://discord.gg/bbJ6pnEFA2"
                 target="_blank"
@@ -35,7 +38,7 @@ export default function Links() {
                     </div>
                     <div>
                         <h3 className="text-2xl font-orbitron font-bold text-white mb-2 group-hover:text-primary transition-colors">Discord Server</h3>
-                        <p className="text-gray-400 text-sm leading-relaxed">The heart of our community. Join voice channels, participate in events, and chat with members.</p>
+                        <p className="text-gray-400 text-sm leading-relaxed">The heart of our community. Join voice channels, participate in events, and chat with thousands of members live.</p>
                     </div>
                     <div className="flex items-center gap-2 text-xs font-rajdhani text-gray-500 uppercase tracking-wider group-hover:text-secondary transition-colors">
                         <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> 152 Online Now
@@ -43,9 +46,8 @@ export default function Links() {
                 </div>
             </motion.a>
 
-            {/* Other links (Youtube, Marketplace, Rules) - Same logic, just make sure hrefs are correct */}
-            {/* ... (Previous code for other cards remains consistent, ensure youtube link is updated) ... */}
-             <motion.a href="https://youtube.com/@as_op_plays?si=tQFaFCVCdqm0obSQ" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-red-500 bg-[#13162e] hover:border-red-500 hover:shadow-[0_0_20px_rgba(239,68,68,0.15)] transition-all">
+            {/* Card 2: YouTube */}
+            <motion.a href="https://youtube.com/@as_op_plays?si=tQFaFCVCdqm0obSQ" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-red-500 bg-[#13162e] hover:border-red-500 hover:shadow-[0_0_20px_rgba(239,68,68,0.15)] transition-all">
                 <div className="flex justify-between items-start">
                     <div className="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors">
                         <Youtube className="w-6 h-6" />
@@ -58,7 +60,8 @@ export default function Links() {
                 </div>
             </motion.a>
 
-             <motion.a href="https://discord.gg/bbJ6pnEFA2" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-secondary bg-[#13162e] hover:border-secondary hover:shadow-[0_0_20px_rgba(6,182,212,0.15)] transition-all">
+            {/* Card 3: Marketplace (Linked to Discord) */}
+            <motion.a href="https://discord.gg/bbJ6pnEFA2" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-secondary bg-[#13162e] hover:border-secondary hover:shadow-[0_0_20px_rgba(6,182,212,0.15)] transition-all">
                 <div className="flex justify-between items-start">
                     <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
                         <ShoppingBag className="w-6 h-6" />
@@ -71,7 +74,8 @@ export default function Links() {
                 </div>
             </motion.a>
 
-             <motion.a href="#" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-red-400 bg-[#13162e] hover:border-red-400 hover:shadow-[0_0_20px_rgba(248,113,113,0.15)] transition-all">
+             {/* Card 4: Rules (Linked to Discord) */}
+             <motion.a href="https://discord.gg/bbJ6pnEFA2" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-red-400 bg-[#13162e] hover:border-red-400 hover:shadow-[0_0_20px_rgba(248,113,113,0.15)] transition-all">
                 <div className="flex justify-between items-start">
                     <div className="w-12 h-12 rounded-lg bg-red-400/10 flex items-center justify-center text-red-400 group-hover:bg-red-400 group-hover:text-white transition-colors">
                         <Gavel className="w-6 h-6" />
