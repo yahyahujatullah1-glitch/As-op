@@ -28,7 +28,7 @@ export default function Footer() {
 
                 {/* Big Action Buttons */}
                 <div className="flex flex-wrap justify-center gap-6 mb-10">
-                    <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="flex items-center gap-3 bg-[#5865F2] hover:bg-[#4752C4] text-white h-14 px-8 rounded-lg font-bold font-rajdhani uppercase tracking-wider transition-transform hover:-translate-y-1 shadow-lg">
+                    <a href="https://discord.gg/KeSfjVGmT2" target="_blank" className="flex items-center gap-3 bg-[#5865F2] hover:bg-[#4752C4] text-white h-14 px-8 rounded-lg font-bold font-rajdhani uppercase tracking-wider transition-transform hover:-translate-y-1 shadow-lg">
                         <MessageCircle size={24} />
                         Join the Squad
                     </a>
@@ -47,7 +47,7 @@ export default function Footer() {
                     </p>
                     
                     <div className="flex gap-6 order-1 md:order-2">
-                        <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="text-slate-400 hover:text-[#5865F2] transition-colors hover:scale-110">
+                        <a href="https://discord.gg/KeSfjVGmT2" target="_blank" className="text-slate-400 hover:text-[#5865F2] transition-colors hover:scale-110">
                             <MessageCircle className="w-6 h-6" />
                         </a>
                         <a href="https://youtube.com/@as_op_plays?si=tQFaFCVCdqm0obSQ" target="_blank" className="text-slate-400 hover:text-primary transition-colors hover:scale-110">
