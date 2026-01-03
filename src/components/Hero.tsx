@@ -55,7 +55,8 @@ export default function Hero() {
           transition={{ delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center gap-5 w-full justify-center"
         >
-          <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group relative flex items-center justify-center gap-3 w-full sm:w-auto h-14 px-8 rounded bg-primary text-white font-rajdhani font-bold text-lg tracking-wide overflow-hidden transition-all hover:scale-105 hover:bg-primary/90 shadow-[0_0_15px_rgba(220,38,38,0.4)]">
+          {/* UPDATED LINK */}
+          <a href="https://discord.gg/KeSfjVGmT2" target="_blank" className="group relative flex items-center justify-center gap-3 w-full sm:w-auto h-14 px-8 rounded bg-primary text-white font-rajdhani font-bold text-lg tracking-wide overflow-hidden transition-all hover:scale-105 hover:bg-primary/90 shadow-[0_0_15px_rgba(220,38,38,0.4)]">
             <MessageCircle className="w-5 h-5 fill-current" />
             <span>Join Discord Server</span>
           </a>
@@ -68,7 +69,7 @@ export default function Hero() {
         {/* Stats Grid - UPDATED NUMBERS */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 border-t border-white/5 pt-10 w-full max-w-4xl">
            {[
-               { val: "800+", label: "Members" },
+               { val: "1.1K+", label: "Members" }, // Updated
                { val: "Daily", label: "Trades" },
                { val: "24/7", label: "Support" },
                { val: "Top 1", label: "Ranked" }
