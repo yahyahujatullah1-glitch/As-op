@@ -63,8 +63,8 @@ export default function ServerInfo() {
                   transition={{ delay: 0.2 }}
                   className="flex flex-col sm:flex-row gap-4 pt-2"
                 >
-                  {/* JOIN DISCORD LINK FIXED HERE */}
-                  <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group relative flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary text-white gap-3 text-base font-bold leading-normal tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,0.5)] font-rajdhani uppercase">
+                  {/* UPDATED LINK */}
+                  <a href="https://discord.gg/KeSfjVGmT2" target="_blank" className="group relative flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary text-white gap-3 text-base font-bold leading-normal tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,0.5)] font-rajdhani uppercase">
                     <MessageCircle className="w-5 h-5 group-hover:animate-bounce" />
                     <span className="truncate">Join Discord</span>
                     <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary to-red-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
