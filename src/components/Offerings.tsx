@@ -25,11 +25,11 @@ export default function Offerings() {
             Join the fastest growing community for Grand Mobile RP and beyond. Explore our exclusive features designed for elite gamers.
         </p>
 
-        {/* Grid - NOW CLICKABLE */}
+        {/* Grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 w-full text-left">
             
             {/* Card 1: Grand Mobile RP - Link to Discord */}
-            <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_30px_-5px_rgba(220,38,38,0.3)] cursor-pointer">
+            <a href="https://discord.gg/KeSfjVGmT2" target="_blank" className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_30px_-5px_rgba(220,38,38,0.3)] cursor-pointer">
                 <div className="relative h-48 w-full overflow-hidden bg-gray-900">
                     <div className="absolute inset-0 bg-gradient-to-t from-[#13162e] to-transparent z-10"></div>
                     <div className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:scale-110 transition-transform duration-700" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=2070&auto=format&fit=crop")' }}></div>
@@ -45,11 +45,10 @@ export default function Offerings() {
                 </div>
             </a>
 
-            {/* Card 2: Giveaways - Link to Discord - ADDED IMAGE */}
-            <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-red-400/50 hover:shadow-[0_0_30px_-5px_rgba(239,68,68,0.3)] cursor-pointer">
+            {/* Card 2: Giveaways - Link to Discord */}
+            <a href="https://discord.gg/KeSfjVGmT2" target="_blank" className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-red-400/50 hover:shadow-[0_0_30px_-5px_rgba(239,68,68,0.3)] cursor-pointer">
                 <div className="relative h-48 w-full overflow-hidden bg-gray-900">
                     <div className="absolute inset-0 bg-gradient-to-t from-[#13162e] to-transparent z-10"></div>
-                    {/* GIVEAWAY IMAGE ADDED BELOW */}
                     <div className="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-110 transition-transform duration-700" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1513884923967-4b182ef1671f?q=80&w=2074&auto=format&fit=crop")' }}></div>
                     <div className="absolute right-3 top-3 z-20 rounded bg-red-500/20 px-2 py-1 text-[10px] font-bold text-red-500 backdrop-blur-md border border-red-500/30 font-rajdhani">WEEKLY</div>
                 </div>
@@ -64,7 +63,7 @@ export default function Offerings() {
             </a>
 
             {/* Card 3: Community Lounge - Link to Discord */}
-            <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-secondary/50 hover:shadow-[0_0_30px_-5px_rgba(6,182,212,0.3)] cursor-pointer">
+            <a href="https://discord.gg/KeSfjVGmT2" target="_blank" className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#13162e] transition-all hover:-translate-y-1 hover:border-secondary/50 hover:shadow-[0_0_30px_-5px_rgba(6,182,212,0.3)] cursor-pointer">
                 <div className="relative h-48 w-full overflow-hidden bg-gray-900">
                     <div className="absolute inset-0 bg-gradient-to-t from-[#13162e] to-transparent z-10"></div>
                     <div className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:scale-110 transition-transform duration-700" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop")' }}></div>
