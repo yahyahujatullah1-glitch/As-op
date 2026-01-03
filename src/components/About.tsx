@@ -69,14 +69,16 @@ export default function About() {
 
               <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start mt-auto">
                 <div className="flex gap-4">
-                    <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="group flex items-center justify-center w-10 h-10 rounded-full bg-white/5 border border-white/10 hover:bg-[#5865F2] hover:border-[#5865F2] hover:scale-110 transition-all duration-300">
+                    {/* UPDATED LINK */}
+                    <a href="https://discord.gg/KeSfjVGmT2" target="_blank" className="group flex items-center justify-center w-10 h-10 rounded-full bg-white/5 border border-white/10 hover:bg-[#5865F2] hover:border-[#5865F2] hover:scale-110 transition-all duration-300">
                       <Disc className="w-5 h-5 text-white/70 group-hover:text-white" />
                     </a>
                     <a href="https://youtube.com/@as_op_plays?si=tQFaFCVCdqm0obSQ" target="_blank" className="group flex items-center justify-center w-10 h-10 rounded-full bg-white/5 border border-white/10 hover:bg-[#FF0000] hover:border-[#FF0000] hover:scale-110 transition-all duration-300">
                       <Youtube className="w-5 h-5 text-white/70 group-hover:text-white" />
                     </a>
                 </div>
-                <a href="https://discord.gg/bbJ6pnEFA2" target="_blank" className="w-full sm:w-auto flex items-center justify-center gap-2 h-12 px-8 rounded-xl bg-gradient-to-r from-primary to-[#b91c1c] text-white font-bold font-orbitron tracking-wide hover:shadow-[0_0_25px_rgba(220,38,38,0.6)] hover:-translate-y-1 transition-all duration-300">
+                {/* UPDATED LINK */}
+                <a href="https://discord.gg/KeSfjVGmT2" target="_blank" className="w-full sm:w-auto flex items-center justify-center gap-2 h-12 px-8 rounded-xl bg-gradient-to-r from-primary to-[#b91c1c] text-white font-bold font-orbitron tracking-wide hover:shadow-[0_0_25px_rgba(220,38,38,0.6)] hover:-translate-y-1 transition-all duration-300">
                   <span>JOIN THE COMMUNITY</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
@@ -85,10 +87,10 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Stats Footer - UPDATED NUMBERS */}
+        {/* Stats Footer - UPDATED NUMBER */}
         <div className="grid grid-cols-3 gap-4 mt-8 px-4 opacity-60">
             <div className="text-center">
-                <p className="text-2xl font-orbitron font-bold text-white">800+</p>
+                <p className="text-2xl font-orbitron font-bold text-white">1.1K+</p> 
                 <p className="text-xs font-rajdhani text-secondary uppercase tracking-widest">Members</p>
             </div>
             <div className="text-center border-l border-white/10">
