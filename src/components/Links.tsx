@@ -23,7 +23,7 @@ export default function Links() {
             
             {/* Card 1: Discord (Span 2 rows on large) */}
             <motion.a 
-                href="https://discord.gg/bbJ6pnEFA2"
+                href="https://discord.gg/KeSfjVGmT2"
                 target="_blank"
                 whileHover={{ y: -5 }}
                 className="group relative p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-primary bg-[#13162e] hover:bg-[#1a1e3b] overflow-hidden lg:col-span-1 lg:row-span-2"
@@ -60,8 +60,8 @@ export default function Links() {
                 </div>
             </motion.a>
 
-            {/* Card 3: Marketplace (Link to Discord) */}
-            <motion.a href="https://discord.gg/bbJ6pnEFA2" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-secondary bg-[#13162e] hover:border-secondary hover:shadow-[0_0_20px_rgba(6,182,212,0.15)] transition-all">
+            {/* Card 3: Marketplace (Linked to Discord) */}
+            <motion.a href="https://discord.gg/KeSfjVGmT2" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-secondary bg-[#13162e] hover:border-secondary hover:shadow-[0_0_20px_rgba(6,182,212,0.15)] transition-all">
                 <div className="flex justify-between items-start">
                     <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
                         <ShoppingBag className="w-6 h-6" />
@@ -74,7 +74,7 @@ export default function Links() {
                 </div>
             </motion.a>
 
-             {/* Card 4: Instagram (Replaced Rules) */}
+             {/* Card 4: Instagram */}
              <motion.a href="https://www.instagram.com/asop.official/" target="_blank" whileHover={{ y: -5 }} className="group p-6 rounded-2xl flex flex-col gap-4 border border-white/5 border-l-4 border-l-[#E1306C] bg-[#13162e] hover:border-[#E1306C] hover:shadow-[0_0_20px_rgba(225,48,108,0.15)] transition-all">
                 <div className="flex justify-between items-start">
                     <div className="w-12 h-12 rounded-lg bg-[#E1306C]/10 flex items-center justify-center text-[#E1306C] group-hover:bg-[#E1306C] group-hover:text-white transition-colors">
